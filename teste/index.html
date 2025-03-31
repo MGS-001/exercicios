@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste Flex-box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1,h2{
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        p{
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .flexbox{
+            display: flex;
+            flex-flow: column nowrap;
+            background-color: grey;
+        }
+
+        .mediatext{
+            display: flex;
+            flex-flow: row wrap-reverse;
+        }
+
+        .textmedia{
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .text{
+            flex: 1 1 500px;
+        }
+
+        div.media{
+            flex: 1 0 auto;
+        }
+
+        .media iframe{
+            width: 90%;
+            margin: 23px;
+        }
+    </style>
+</head>
+<body>
+    <header class="normal">
+        <h1>Teste de Flex-box</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea earum itaque inventore! Veritatis, vero facere quidem accusamus amet, recusandae debitis exercitationem, maiores aliquid reprehenderit praesentium eaque ex. Corrupti, temporibus sapiente.
+        Non, praesentium dolor iure delectus doloremque sit! Praesentium sequi nulla eum fugiat numquam ratione nobis natus rem. Iure, cumque, molestias nesciunt libero commodi doloribus, perspiciatis ducimus id doloremque quibusdam ratione?</p>
+    </header>
+    <main>
+        <section class="flexbox">
+            <article class="mediatext">
+              <div class="text">
+                  <h2>Teste Media > Text</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatum ut molestias debitis cum et maiores provident, dolorem doloribus? Quia quaerat eum nesciunt culpa. Voluptatibus dolorem quaerat aut voluptatum architecto?
+                  Perferendis eaque quae doloribus vel, sunt deleniti iusto culpa? Placeat repellat voluptas harum consequatur praesentium ut aut cumque culpa, ducimus fugiat porro beatae consectetur eaque in nostrum ea. Et, laborum.</p>
+              </div>
+              <div class="media">
+                <img src="imagem/computador.webp" alt="Imagem de Computador">
+              </div>
+            </article>
+            <article class="textmedia">
+                <div class="text">
+                    <h2>Teste Text > Media</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, repudiandae esse doloribus neque suscipit quae, vero veniam officia minima, eligendi provident aliquam beatae magnam modi aspernatur? A blanditiis in non.
+                    Enim aliquam illo, quos numquam vitae suscipit soluta expedita ea aliquid fugit assumenda magni quam optio delectus deleniti sit! Asperiores sequi ipsa necessitatibus nostrum, minima quam tempore! Quia, dolore aperiam.</p>
+                </div>
+                <div class="media">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eCLthWcwC60?si=hT291VoQLuIuN3LT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+                </div>
+            </article>
+        </section>
+        <section class="normal">
+            <h2>Normal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempora modi culpa quisquam sunt! Quaerat ad cumque, doloremque eligendi fugit at aspernatur minima inventore voluptatem delectus ipsam odit, eos consectetur.
+            Corrupti iure fugit quidem dolorum consectetur eius sed sint distinctio asperiores perferendis eos doloribus, numquam, quaerat doloremque quis fuga rerum optio officiis a vero eligendi recusandae repellendus maiores. Molestiae, est.
+            Laudantium exercitationem vitae excepturi iusto cupiditate voluptate voluptatem, temporibus possimus, vel commodi maxime magnam dignissimos laborum dolore adipisci repellendus quo a perferendis? Dolor earum laudantium perferendis consectetur tempora a unde!</p>
+        </section>
+    </main>
+</body>
+</html>
